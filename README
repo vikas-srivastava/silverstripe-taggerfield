@@ -1,0 +1,37 @@
+###############################################
+TaggerField Module
+###############################################
+
+Maintainer Contact
+-----------------------------------------------
+Normann	Lou
+<nlou (at) silverstripe (dot) com>
+
+Requirements
+-----------------------------------------------
+- SilverStripe 2.3 +
+- TagField trunk
+
+Documentation
+-----------------------------------------------
+
+Installation Instructions
+-----------------------------------------------
+Install both TagField module and TaggerField Module
+
+Usage Overview
+-----------------------------------------------
+This field extends the TagField, with a new API to add each tag
+individually in a front-end form that using this field. The features
+in TagField, like auto suggestion are maintained. The field initialises
+a list of the current object's tags and by click on a "+" button, an input
+field is displayed, text typed-in will be added to the existing tag list when 
+key stroke "enter" or click-on the auto-suggested word. 
+
+
+Known issues
+-----------------------------------------------
+
+Future works
+-----------------------------------------------
+Merge this with the older TagField so it works by setting an variable of the field configuration, such as "itemised", to be true..

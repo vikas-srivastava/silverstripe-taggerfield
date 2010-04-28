@@ -29,7 +29,7 @@
 			}
 		}
 	};
-	$.fn.toggle = function(){
+	$.fn.taggertoggle = function(){
 		if($(this).hasClass('showtagger')){
 			$(this).removeClass('showtagger');
 			$(this).addClass('hiddentagger');
@@ -49,8 +49,8 @@
 			var b = $('<a role="button" href="#" style="">Add Tags Here</a>').addClass('next_tag_expander showtagger').click(function(){
 					var tagger = $(this).data('tagger');
 					$(tagger).addTag( $(tagger).val() );
-					$(tagger).toggle();
-					$(this).toggle();
+					$(tagger).taggertoggle();
+					$(this).taggertoggle();
 					$(tagger).val('');
 					$(tagger).stop();
 					return false;
@@ -66,8 +66,8 @@
 				//console.log(e.keyCode);
 				$(this).addTag( $(this).val() );
 				var b = $(this).prev('a');
-				b.toggle();
-				$(this).toggle();
+				b.taggertoggle();
+				$(this).taggertoggle();
 				$(this).val('');
 				$(this).stop();
 				return false;
@@ -77,8 +77,8 @@
 				//console.log(e.keyCode);
 				$(this).addTag( $(this).val() );
 				var b = $(this).prev('a');
-				b.toggle();
-				$(this).toggle();
+				b.taggertoggle();
+				$(this).taggertoggle();
 				$(this).val('');
 				$(this).stop();
 				return false;
