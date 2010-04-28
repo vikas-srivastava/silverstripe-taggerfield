@@ -79,7 +79,7 @@ div.field.taggerfield{
 		list-style-image:none;
 		list-style-position:outside;
 		list-style-type:none;
-		font-size: 0.8em;
+		font-size: 1em;
 	}
 
 		div.field.taggerfield ul.tagList li.tagName{
