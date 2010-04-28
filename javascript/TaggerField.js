@@ -10,10 +10,13 @@
 				var i = $('<input type="hidden" />').attr('name',fn).val(n);
 				var t = $('<li />').text(n).addClass('tagName')
 					.click(function(){
+						var answer = confirm("Are you sure you want to remove '"+$(this).next('input').val()+"'");
+						if(answer){
 						// remove
-						var hidden = $(this).data('hidden');
-						$(hidden).remove();
-						$(this).remove();
+							var hidden = $(this).data('hidden');
+							$(hidden).remove();
+							$(this).remove();
+						}
 					})
 					.data('hidden',i);
 				var l = $(this).data('list');
