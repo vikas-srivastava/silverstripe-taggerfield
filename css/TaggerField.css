@@ -1,0 +1,91 @@
+div.field.taggerfield{
+	display: block;
+	clear: both;
+}
+
+	div.field.taggerfield label{
+		width: auto;
+	}
+
+	div.field.taggerfield div.tagajaxDiv{
+		float: left;
+		width: 172px;
+	}
+
+		div.field.taggerfield div.tagajaxDiv input.tagger{
+			float: left;
+			width: 150px;
+		}
+		
+		div.field.taggerfield div.tagajaxDiv span.tagMatches span._tag_suggestion{
+			float: left;
+			clear: left;
+			margin: 1px 0px;
+			font-size: 0.7em;
+			font-weight: bold;
+			padding: 0px 4px;
+			background-color:#000000;
+			color:#FFFFFF;
+		}
+		
+		div.field.taggerfield div.tagajaxDiv span.tagMatches {
+			float: left;
+			clear: left;
+			margin: 0;
+		}
+	
+		div.field.taggerfield div.tagajaxDiv input.tagger.hiddentagger,
+		div.field.taggerfield div.tagajaxDiv a.next_tag_expander.hiddentagger
+		{
+			display: none;
+		}
+	
+		div.field.taggerfield div.tagajaxDiv input.tagger.showtagger,
+		div.field.taggerfield div.tagajaxDiv a.next_tag_expander.showtagger
+		{
+			display: block;
+		}
+	
+		div.field.taggerfield div.tagajaxDiv a.next_tag_expander{
+			-moz-background-clip:border;
+			-moz-background-inline-policy:continuous;
+			-moz-background-origin:padding;
+			background:transparent url(../images/controls.png) no-repeat scroll -90px 0;
+			display:block;
+			float:left;
+			height:18px;
+			margin-left:4px;
+			overflow:hidden;
+			text-indent:-9999px;
+			width:18px;
+			border: none;
+		}
+	
+		div.field.taggerfield div.tagajaxDiv a.next_tag_expander:link {
+			color:#5D6441;
+		}
+	
+		div.field.taggerfield div.tagajaxDiv a.next_tag_expander:hover,
+		div.field.taggerfield div.tagajaxDiv a.next_tag_expander:active,
+		div.field.taggerfield div.tagajaxDiv a.next_tag_expander:focus{
+			background-position:-90px -18px;
+		}
+	
+	div.field.taggerfield ul.tagList{
+		float: left;
+		padding: 0px;
+		margin: 0px;
+		border: none;
+		list-style-image:none;
+		list-style-position:outside;
+		list-style-type:none;
+		font-size: 0.8em;
+	}
+
+		div.field.taggerfield ul.tagList li.tagName{
+			float: left;
+			background: none;
+			padding: 0 1.2em 0 0;
+			border: none;
+		}
+		
