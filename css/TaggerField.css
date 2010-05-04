@@ -10,6 +10,7 @@ div.field.taggerfield{
 	div.field.taggerfield div.tagajaxDiv{
 		float: left;
 		width: 172px;
+		margin-bottom: 1em;
 	}
 
 		div.field.taggerfield div.tagajaxDiv input.tagger{
@@ -80,6 +81,7 @@ div.field.taggerfield{
 		list-style-position:outside;
 		list-style-type:none;
 		font-size: 1em;
+		clear: left;
 	}
 
 		div.field.taggerfield ul.tagList li.tagName{
