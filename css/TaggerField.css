@@ -87,7 +87,29 @@ div.field.taggerfield{
 		div.field.taggerfield ul.tagList li.tagName{
 			float: left;
 			background: none;
-			padding: 0 1.2em 0 0;
+			padding: 0 0.6em;
 			border: none;
 		}
 		
+			div.field.taggerfield ul.tagList li.tagName a{
+				border: none;
+				font-weight: bold;
+				color: #000000;
+			}
+		
+			div.field.taggerfield ul.tagList li.tagName.mouseover {
+				background-color: #999999;
+			}
+		
+			div.field.taggerfield ul.tagList li.tagName span.delete_button{
+				-moz-background-clip:border;
+				-moz-background-inline-policy:continuous;
+				-moz-background-origin:padding;
+				background:transparent url(../images/controls.png) no-repeat scroll 0 0;
+				float:right;
+				height:18px;
+				text-indent:18px;
+				width:18px;
+				border: none;
+				margin: 0px;
+			}

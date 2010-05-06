@@ -25,7 +25,7 @@ class TaggerField extends TagField {
 		Requirements::javascript("tagfield/javascript/TagField.js");
 		Requirements::javascript("tagfield/thirdparty/jquery-tags/jquery.tags.js");
 		Requirements::javascript("taggerfield/javascript/TaggerField.js");
-		//Requirements::javascript("taggerfield/thirdparty/jquery-tagger/jquery.tagger.js");
+
 		$customised = <<<JS
 	(function($) {
 		$(document).ready(function(){

@@ -8,23 +8,43 @@
 
 				var fn = $(this).data('name');
 				var i = $('<input type="hidden" />').attr('name',fn).val(n);
-				var t = $('<li />').text(n).addClass('tagName')
+					
+				var t = $('<li />')
+					.addClass('tagName')
+					.data('hidden',i);
+				
+				var a = $('<a />').attr('title', "click to delete ").text(n)
+					.hover(
+						function () {
+							$(this).data('parentL').addClass('mouseover')
+							var span = $("<span />").addClass('delete_button');
+							$(this).append(span);
+						}, 
+						function () {
+							$(this).find("span:last").remove();
+							$(this).data('parentL').removeClass('mouseover')
+						}
+					)
 					.click(function(){
-						var answer = confirm("Are you sure you want to remove '"+$(this).next('input').val()+"'");
+						var answer = confirm("Are you sure you want to remove '"+$(this).text()+"'");
 						if(answer){
 						// remove
-							var hidden = $(this).data('hidden');
+							var parentL = $(this).data('parentL');
+							var hidden = $(parentL).data('hidden');
 							$(hidden).remove();
-							$(this).remove();
+							$(parentL).remove();
 						}
+						return false;
 					})
-					.data('hidden',i);
+					.data('parentL', t);
+				
+				$(t).append(a);
 				var l = $(this).data('list');
 				$(l).append(t).append(i);
-				var lastT = t.prev('input').prev('li.tagName');
-			
-				if(lastT.length){
-					lastT.text(lastT.text()+",");
+				
+				var lastA = t.prev('input').prev('li.tagName').find("a:last");
+				if(lastA.length){
+					lastA.text(lastA.text()+",");
 				}
 			}
 		}
@@ -51,6 +71,7 @@
 					$(tagger).addTag( $(tagger).val() );
 					$(tagger).taggertoggle();
 					$(this).taggertoggle();
+					$(tagger.focus());
 					$(tagger).val('');
 					$(tagger).stop();
 					return false;
