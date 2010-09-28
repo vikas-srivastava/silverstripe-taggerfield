@@ -20,8 +20,8 @@ class TaggerField extends TagField {
 	
 	function Field(){
 		Requirements::javascript(THIRDPARTY_DIR . "/jquery/jquery.js");
-		Requirements::javascript(THIRDPARTY_DIR . "/jquery/jquery_improvements.js");
-		Requirements::javascript(THIRDPARTY_DIR . '/jquery/plugins/livequery/jquery.livequery.js');
+		Requirements::javascript(SAPPHIRE_DIR . "/javascript/jquery_improvements.js");
+		
 		Requirements::javascript("tagfield/javascript/TagField.js");
 		Requirements::javascript("tagfield/thirdparty/jquery-tags/jquery.tags.js");
 		Requirements::javascript("taggerfield/javascript/TaggerField.js");
@@ -70,5 +70,3 @@ JS;
 		parent::saveInto($record);
 	}
 }
-
-?>
