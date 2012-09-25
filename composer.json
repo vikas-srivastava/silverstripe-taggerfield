@@ -1,0 +1,19 @@
+{
+	"name": "silverstripe-labs/taggerfield",
+	"description": "This field extends the TagField, with a new API to add each tag
+		individually in a front-end form that using this field.",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe-labs", "taggerfield", "tags", "fields", "tagfield" ],
+	"authors": [
+	{
+		"name": "Normann Lou",
+		"email": "nlou@silverstripe.com"
+	}
+	],
+	"minimum-stability": "dev",
+	"require":
+	{
+		"silverstripe/framework": "2.3.*",
+		"chillu/tagfield": "dev-master"
+	}
+}
